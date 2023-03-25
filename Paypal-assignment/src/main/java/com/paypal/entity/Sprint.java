@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "sprints")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

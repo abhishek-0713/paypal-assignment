@@ -20,4 +20,8 @@ public interface SprintService {
     List<Task> getAllTasksBySprintId(Integer sprintId) throws ResourceNotFoundException;
 
     List<Task> getAllTasksByAssigneeId(Integer assigneeId) throws ResourceNotFoundException;
+
+    List<Sprint> getAllSprints();
+
+    List<Task> getAllTasks();
 }

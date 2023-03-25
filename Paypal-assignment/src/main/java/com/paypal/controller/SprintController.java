@@ -68,4 +68,21 @@ public class SprintController {
     }
 
 
+    @GetMapping("/sprints")
+    public  ResponseEntity<List<Sprint>> getAllSprints() throws ResourceNotFoundException{
+
+        List<Sprint> sprints = sprintService.getAllSprints();
+        return new ResponseEntity<>(sprints, HttpStatus.OK);
+
+    }
+
+    @GetMapping("/tasks")
+    public  ResponseEntity<List<Task>> getAllTasks() throws ResourceNotFoundException{
+
+        List<Task> tasks = sprintService.getAllTasks();
+        return new ResponseEntity<>(tasks, HttpStatus.OK);
+
+    }
+
+
 }
