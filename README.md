@@ -6,8 +6,10 @@
 - Java
 - AWS
 - Spring Boot
+- Hibernate
 - MySQL
 - Maven
+- Spring MVC
 
 
 ## API Endpoints
